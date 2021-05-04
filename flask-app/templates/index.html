@@ -174,24 +174,34 @@
         </div>
 
         <div class="row">
+
           <div class="col-lg-6">
-            <form action="" method="POST" role="form" class="php-email-form">
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="text" rows="10" placeholder="Enter News Article" required></textarea>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <h3>Input</h3>
+                  <form action="" method="POST" role="form" class="php-email-form">
+                    <div class="form-group mt-3">
+                      <textarea class="form-control" name="text" rows="10" placeholder="Enter News Article" required></textarea>
+                    </div>
+                    <br>
+                    <div class="text-center"><button type="submit">Classify</button></div>
+                  </form>
+                </div>
               </div>
-              <br>
-              <div class="text-center"><button type="submit">Classify</button></div>
-            </form>
+            </div>
           </div>
 
           <div class="col-lg-6">
             <div class="row">
               <div class="col-md-12">
                 <div class="info-box">
-                  <!-- <i class="bx bx-map"></i> -->
                   <h3>Output</h3>
-                  <p>{{output_text}}</p>
-                  <!-- <p>A108 Adam Street, New York, NY 535022</p> -->
+                  <form action="" method="POST" role="form" class="php-email-form">
+                    <div class="form-group mt-3">
+                      <textarea class="form-control" name="text" rows="10" placeholder="News Category will appear here upon classification." required>{{output_text}}</textarea>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
