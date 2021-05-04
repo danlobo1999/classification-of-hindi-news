@@ -39,13 +39,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #46344E;
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #ffcb30;
-  color: #fff;
+  color: #46344E;
 }
 
 .back-to-top.active {
@@ -352,6 +352,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .btn-get-started:hover {
   background: #ffc107;
+  color: #46344E;
 }
 
 @media (min-width: 1024px) {
@@ -1227,7 +1228,7 @@ section {
   background: #ffc107;
   border: 0;
   padding: 10px 30px;
-  color: #fff;
+  color: #46344E;
   transition: 0.4s;
   border-radius: 50px;
 }
@@ -1260,12 +1261,12 @@ section {
 #footer {
   color: #46344E;
   font-size: 14px;
-  background: #f4f5f8;
+  background: #f7f7f7;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fafafc;
+  background: #f7f7f7;
 }
 
 #footer .footer-top .footer-system {
@@ -1335,11 +1336,12 @@ section {
   color: #ffc107;
 }
 
-#footer .footer-newsletter {
+#footer .footer-copyright {
   font-size: 15px;
+  padding: 10px;
 }
 
-#footer .footer-newsletter h4 {
+#footer .footer-copyright h4 {
   font-size: 16px;
   font-weight: bold;
   color: #444444;
@@ -1347,7 +1349,7 @@ section {
   padding-bottom: 12px;
 }
 
-#footer .footer-newsletter form {
+#footer .footer-copyright form {
   margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
@@ -1357,13 +1359,13 @@ section {
   border: 1px solid #e1e4ec;
 }
 
-#footer .footer-newsletter form input[type="email"] {
+#footer .footer-copyright form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type="submit"] {
+#footer .footer-copyright form input[type="submit"] {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -1379,7 +1381,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type="submit"]:hover {
+#footer .footer-copyright form input[type="submit"]:hover {
   background: #ffce3a;
 }
 
