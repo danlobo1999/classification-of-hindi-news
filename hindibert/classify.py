@@ -12,10 +12,13 @@ class Classify:
         }
         self.model = joblib.load(f'{self.paths["model"]}')
         self.labeler = joblib.load(f'{self.paths["labeler"]}')
+        print("Loaded assets")
 
     def predictor(self, text):
         # Predicting the category from the input hindi text
+
         prediction = self.model.predict(text)
         category = self.labeler.inverse_transform(prediction[0])
+        print("made prediction")
 
         return category[0]
