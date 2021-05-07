@@ -182,10 +182,11 @@
                   <h3>Input</h3>
                   <form method="POST" role="form" class="php-email-form" id='classify'>
                     <div class="form-group mt-3">
-                      <textarea id="news-text" class="form-control" name="text" rows="10" placeholder="Enter News Article" required></textarea>
+                      <textarea style="resize: none;" id="news-text" class="form-control" name="text" rows="10" placeholder="Enter News Article" required></textarea>
                     </div>
                     <br>
                     <div class="text-center"><button id="classify-btn" type="submit">Classify</button></div>
+                    <br>
                   </form>
                 </div>
               </div>
@@ -199,8 +200,11 @@
                   <h3>Output</h3>
                   <form action="" method="POST" role="form" class="php-email-form">
                     <div class="form-group mt-3">
-                      <textarea id="category" class="form-control" name="text" rows="10" placeholder="News Category will appear here upon classification." required>{{output_text}}</textarea>
+                      <textarea readonly id="category" style="font-size: 25px; font-weight: bold; text-align: center; background-color: white; resize: none; border: 0px;" class="form-control" name="text" rows="10" required>{{output_text}}</textarea>
                     </div>
+                    <br>
+                    <div style="visibility: hidden;" class="text-center"><button id="classify-btn" type="submit">Classify</button></div>
+                    <br>
                   </form>
                 </div>
               </div>
