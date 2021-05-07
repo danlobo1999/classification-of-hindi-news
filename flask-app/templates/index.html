@@ -51,7 +51,7 @@
   <section id="hero" class="d-flex align-items-center justify-content-center">
     <div class="container position-relative">
       <h1>Classification of <b style="color: #ffc107;">हिंदी</b> News</h1>
-      <h2>We classify news.. blah, blah, blah</h2>
+      <!-- <h2>We classify news.. blah, blah, blah</h2> -->
       <a href="#about" class="btn-get-started scrollto">Learn More / और अधिक जानें</a>
     </div>
   </section><!-- End Hero -->
@@ -67,7 +67,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <h3>About</h3>
-            <p>
+            <p style="text-align: justify; text-justify: inter-word;">
               In today’s era, when everything is going digital there is a large amount of data available. 
               One of the versatile forms of data is news. The news is spread widely due to technological 
               advancements and it influences people to a great extent. The news classification is an important 
@@ -79,18 +79,6 @@
               available conjuncts and letter combinations, its sentence structure, and multisense words. We used BBC 
               Hindi News Dataset to train the model and gained an accuracy of 63.47%
             </p>
-            <!-- <div class="row">
-              <div class="col-md-6">
-                <i class="bx bx-receipt"></i>
-                <h4>Corporis voluptates sit</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-              </div>
-              <div class="col-md-6">
-                <i class="bx bx-cube-alt"></i>
-                <h4>Ullamco laboris nisi</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              </div>
-            </div> -->
           </div>
         </div>
 
@@ -103,7 +91,6 @@
 
         <div class="section-title">
           <h2>Steps</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
         <div class="row">
@@ -111,7 +98,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="icon">
-                <i class="bx bxl-file-blank"></i>
+                <i class="bx bx-file-blank"></i>
               </div>
               <h4><a href="">Input</a></h4>
               <p>The user can paste a Hindi news article or it's snippet into the input field.</p>
@@ -161,7 +148,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-teal">
               <div class="icon">
-                <i class="bx bx-arch"></i>
+                <i class="bx bx-file"></i>
               </div>
               <h4><a href="">Output</a></h4>
               <p>The output consisting of the category in which the given news article belongs is presented to the user as the output.</p>
@@ -209,7 +196,7 @@
                   <h3>Output</h3>
                   <form action="" method="POST" role="form" class="php-email-form">
                     <div class="form-group mt-3">
-                      <textarea readonly id="category" style="font-size: 25px; font-weight: bold; text-align: center; background-color: white; resize: none; border: 0px;" class="form-control" name="text" rows="10" required>{{output_text}}</textarea>
+                      <textarea readonly id="category" style="font-weight: bold; text-align: center; background-color: white; resize: none; border: 0px;" class="form-control" name="text" rows="10" required>{{output_text}}</textarea>
                     </div>
                     <br>
                     <div style="visibility: hidden;" class="text-center"><button id="classify-btn" type="submit">Classify</button></div>
