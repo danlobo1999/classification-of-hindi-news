@@ -180,12 +180,12 @@
               <div class="col-md-12">
                 <div class="info-box">
                   <h3>Input</h3>
-                  <form action="" method="POST" role="form" class="php-email-form">
+                  <form method="POST" role="form" class="php-email-form" id='classify'>
                     <div class="form-group mt-3">
-                      <textarea class="form-control" name="text" rows="10" placeholder="Enter News Article" required></textarea>
+                      <textarea id="news-text" class="form-control" name="text" rows="10" placeholder="Enter News Article" required></textarea>
                     </div>
                     <br>
-                    <div class="text-center"><button type="submit">Classify</button></div>
+                    <div class="text-center"><button id="classify-btn" type="submit">Classify</button></div>
                   </form>
                 </div>
               </div>
@@ -199,7 +199,7 @@
                   <h3>Output</h3>
                   <form action="" method="POST" role="form" class="php-email-form">
                     <div class="form-group mt-3">
-                      <textarea class="form-control" name="text" rows="10" placeholder="News Category will appear here upon classification." required>{{output_text}}</textarea>
+                      <textarea id="category" class="form-control" name="text" rows="10" placeholder="News Category will appear here upon classification." required>{{output_text}}</textarea>
                     </div>
                   </form>
                 </div>
@@ -355,12 +355,41 @@
   <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
   <script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+  <!-- <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script> -->
   <script src="{{ url_for('static', filename='vendor/purecounter/purecounter.js') }}"></script>
   <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
 
   <!-- Template Main JS File -->
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" 
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+          crossorigin="anonymous"></script>
+
+
+  <script>
+    $(document).on('submit','#classify',function(e)
+                  {
+      e.preventDefault();
+      var button= document.getElementById('classify-btn');
+      button.innerHTML = 'Loading..';
+      $.ajax({
+        type:'POST',
+        url: "/classify/",
+        data:{
+          data: $("#news-text").innerHTML
+        },
+        success:function(data)
+        {
+          var button = document.getElementById('classify-btn');
+          button.innerHTML = 'Classify';
+
+          $("textarea#category").val(data);
+        }
+      })
+    });
+  </script>
 
 </body>
 
