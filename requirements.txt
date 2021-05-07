@@ -1,6 +1,10 @@
-# Flask requirements
+# Flask
 flask==1.1.2
 
+# Heroku
+gunicorn==20.1.0
+
+# Hindi-BERT
 joblib==1.0.1
 numpy==1.20.2
 pandas==1.2.4
