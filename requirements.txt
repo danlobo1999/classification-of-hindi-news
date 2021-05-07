@@ -1,0 +1,24 @@
+# Flask
+flask==1.1.2
+
+# Heroku
+gunicorn==20.1.0
+
+# Hindi-BERT
+joblib==1.0.1
+numpy==1.20.2
+pandas==1.2.4
+scikit-learn==0.24.2
+simpletransformers==0.61.4
+
+# Torch CUDA
+# --find-links https://download.pytorch.org/whl/torch_stable.html
+# torch==1.8.0+cu111
+# torchvision==0.9.0+cu111
+# torchaudio==0.8.0
+
+# Torch CPU
+--find-links https://download.pytorch.org/whl/torch_stable.html 
+torch==1.8.0+cpu
+torchvision==0.9.0+cpu
+torchaudio==0.8.0 
