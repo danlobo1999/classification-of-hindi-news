@@ -63,14 +63,23 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <img src="{{ url_for('static', filename='img/Dan.jpg') }}" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='img/COHN-Architecture.JPEG') }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <h3>About</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              In today’s era, when everything is going digital there is a large amount of data available. 
+              One of the versatile forms of data is news. The news is spread widely due to technological 
+              advancements and it influences people to a great extent. The news classification is an important 
+              aspect when there is a processing of news information, it can help distinguish news according to its 
+              category and even help to organize. It is even helpful for preference or relevance. In this project, 
+              a Hindi News Classification model is proposed, which uses the monsoon-nlp/hindi-bert model and attempts 
+              to use transfer learning on the model to classify a set of Hindi news snippets into its respective 
+              predefined categories. Such text classification becomes challenging in Hindi due to its large set of 
+              available conjuncts and letter combinations, its sentence structure, and multisense words. We used BBC 
+              Hindi News Dataset to train the model and gained an accuracy of 63.47%
             </p>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-6">
                 <i class="bx bx-receipt"></i>
                 <h4>Corporis voluptates sit</h4>
@@ -81,7 +90,7 @@
                 <h4>Ullamco laboris nisi</h4>
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -93,8 +102,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>steps</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Steps</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
         <div class="row">
@@ -102,50 +111,50 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <div class="icon">
-                <i class="bx bxl-dribbble"></i>
+                <i class="bx bxl-file-blank"></i>
               </div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <h4><a href="">Input</a></h4>
+              <p>The user can paste a Hindi news article or it's snippet into the input field.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-orange ">
               <div class="icon">
-                <i class="bx bx-file"></i>
+                <i class="bx bx-code-block"></i>
               </div>
-              <h4><a href="">Sed Perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4><a href="">Convert the text</a></h4>
+              <p>Now that the user has provided the Hindi news article as a text input to the system, the system converts this text into a list of string.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-pink">
               <div class="icon">
-                <i class="bx bx-tachometer"></i>
+                <i class="bx bx-sitemap"></i>
               </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4><a href="">Classification model</a></h4>
+              <p>The text which is converted into a list is given to the Hindi-BERT news classification model.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-yellow">
               <div class="icon">
-                <i class="bx bx-layer"></i>
+                <i class="bx bx-bar-chart-square"></i>
               </div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4><a href="">Prediction</a></h4>
+              <p>Using the Hindi-BERT Classification model we obtain a list of category predictions for the given news article. </p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-red">
               <div class="icon">
-                <i class="bx bx-slideshow"></i>
+                <i class="bx bx-list-ul"></i>
               </div>
-              <h4><a href="">Dele Cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+              <h4><a href="">Convert the list</a></h4>
+              <p>The list of category predictions is converted into the classification label</p>
             </div>
           </div>
 
@@ -154,8 +163,8 @@
               <div class="icon">
                 <i class="bx bx-arch"></i>
               </div>
-              <h4><a href="">Divera Don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+              <h4><a href="">Output</a></h4>
+              <p>The output consisting of the category in which the given news article belongs is presented to the user as the output.</p>
             </div>
           </div>
 
