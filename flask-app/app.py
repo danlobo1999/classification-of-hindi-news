@@ -23,7 +23,7 @@ def index():
 def classify():
     if request.method == "POST":
         input_text = [request.form.get("data")]
-        output_text = hindi_bert.predictor(text=input_text)
+        output_text = "Category : " + hindi_bert.predictor(text=input_text)
 
         return output_text
 
@@ -31,4 +31,4 @@ def classify():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=True)
