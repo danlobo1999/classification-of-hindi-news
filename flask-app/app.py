@@ -6,11 +6,15 @@ sys.path.append(os.path.abspath("../"))
 
 from hindibert.classify import Classify
 
-app = Flask(__name__, template_folder="templates")
+app = Flask("flask-app", template_folder="templates")
+
+hindi_bert = None
 
 # Home page
 @app.route("/")
 def index():
+    global hindi_bert
+    hindi_bert = Classify()
     return render_template("index.html")
 
 
@@ -18,11 +22,8 @@ def index():
 @app.route("/classify/", methods=["POST", "GET"])
 def classify():
     if request.method == "POST":
-        hindi_bert = Classify()
         input_text = [request.form.get("data")]
-
         output_text = hindi_bert.predictor(text=input_text)
-        print(output_text)
 
         return output_text
 
@@ -30,4 +31,4 @@ def classify():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader=False)
+    app.run(debug=True)

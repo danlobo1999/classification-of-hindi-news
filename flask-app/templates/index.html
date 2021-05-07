@@ -373,12 +373,12 @@
                   {
       e.preventDefault();
       var button= document.getElementById('classify-btn');
-      button.innerHTML = 'Loading..';
+      button.innerHTML = 'Classifying..';
       $.ajax({
         type:'POST',
         url: "/classify/",
         data:{
-          data: $("#news-text").innerHTML
+          data: $("#news-text").val()
         },
         success:function(data)
         {
