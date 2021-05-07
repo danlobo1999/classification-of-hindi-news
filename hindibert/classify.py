@@ -7,8 +7,8 @@ class Classify:
     def __init__(self):
         # Defining paths and loading the model and the labeler
         self.paths = {
-            "model": "../model/hindi_bert_model/model_joblib",
-            "labeler": "../model/hindi_bert_model/labeler_joblib",
+            "model": "model/hindi_bert_model/model_joblib",
+            "labeler": "model/hindi_bert_model/labeler_joblib",
         }
         self.model = joblib.load(f'{self.paths["model"]}')
         self.labeler = joblib.load(f'{self.paths["labeler"]}')
