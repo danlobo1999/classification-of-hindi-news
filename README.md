@@ -27,13 +27,14 @@ One of the versatile forms of data is news. The news is spread widely due to tec
 and it influences people to a great extent. The news classification is an important aspect when there is a 
 processing of news information, it can help distinguish news according to its category and even help to organize. 
 It is even helpful for preference or relevance. In this project, a Hindi News Classification model is proposed, 
-which uses the monsoon-nlp/hindi-bert model and attempts to use transfer learning on the model to classify a set of 
-Hindi news snippets into its respective predefined categories. Such text classification becomes challenging in Hindi 
-due to its large set of available conjuncts and letter combinations, its sentence structure, and multisense words. 
-We used BBC Hindi News Dataset to train the model and gained an accuracy of 63.47%.
+which uses the [monsoon-nlp/hindi-bert model](https://huggingface.co/monsoon-nlp/hindi-bert) and attempts to use transfer 
+learning on the model to classify a set of Hindi news snippets into its respective predefined categories. Such text 
+classification becomes challenging in Hindi due to its large set of available conjuncts and letter combinations, its 
+sentence structure, and multisense words. We used [BBC Hindi News Dataset](https://github.com/NirantK/hindi2vec/releases/tag/bbc-hindi-v0.1) 
+to train the model and gained an accuracy of 63.47%.
 
 <p align="center">
-    <img src = "flask-app/static/img/COHN-Architecture.jpeg">
+    <img src = "flask-app/static/img/COHN-Architecture.jpeg" style="width: 50%;">
 </p>
 
 ## <a name="FS">**2. Folder Structure</a>**
@@ -93,7 +94,7 @@ pip install -r requirements.txt
 ```
 
 ## <a name="AppRun">**4. How to run the application?**</a>
-Open your terminal, activate your python/conda environment and run the [app.py]() file using the following command :
+Open your terminal, activate your python/conda environment, change directory to [flask-app](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/flask-app) and run the [app.py](https://github.com/danlobo1999/classification-of-hindi-news/blob/development/flask-app/app.py) file using the following command :
 ```
 python app.py
 ```
@@ -106,23 +107,32 @@ flask run
 
 * This application uses Flask, HTML, CSS, JavaScript, JQuery, and Ajax. 
 
-* The [app.py]() file consists of the flask application. 
+* The [app.py](https://github.com/danlobo1999/classification-of-hindi-news/blob/development/flask-app/app.py) file consists of the flask application. 
 
-* This flask application uses various templates that are created using HTML and are stored in the [templates]() folder.
+* This flask application uses various templates that are created using HTML and are stored in the [templates](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/flask-app/templates) folder.
 
-* The [CSS]() and [JavaScript]() files used by the HTML templates are stored in the [static]() folder. 
+* The [CSS](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/flask-app/static/css) and [JavaScript](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/flask-app/static/js) files used by the HTML templates are stored in the [static](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/flask-app/static) folder. 
 
-* The main page ie the [index.html]() file consists of the basic details of this application: How it works, about the system, the system, about the team, etc.
-* The [XYZ]() and [ABC]() folders consist of the models used, the dependencies and other code that is used to run the application. 
+* The main page ie the [index.html](https://github.com/danlobo1999/classification-of-hindi-news/blob/development/flask-app/templates/index.html) file consists of the basic details of this application: How it works, about the system, the system, about the team, etc.
+
+* The [hindibert](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/hindibert) folder consists of the python source code required to run  the application and the [model](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/model) folder contains our Hindi BERT model which is trained on our [dataset](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/dataset).
+
+
+* The [notebooks folder]() consists of various notebooks for data exploration, training and testing the Hindi BERT model. 
 
 ## <a name="Demo">**6. Demonstration**</a>
+
+Click on the GIF to watch the demonstration video.
+[![Classification of Hindi News' Demonstration](static/img/COHN_GIF.gif)](https://www.youtube.com/watch?v=NiI6iSWUnWg)
 
 ---
 
 
 ## <a name="References">**7. References:**</a>
 
-[1[ [Google's BERT model](https://github.com/google-research/bert)
+[1] [Hindi BERT model](https://huggingface.co/monsoon-nlp/hindi-bert)
 
-[2] [Deep Learning for Hindi Text Classification: A Comparison](https://www.researchgate.net/publication/338883896_Deep_Learning_for_Hindi_Text_Classification_A_Comparison)
+[2] [BBC Hindi News Dataset](https://github.com/NirantK/hindi2vec/releases/tag/bbc-hindi-v0.1)
+
+[3] [Deep Learning for Hindi Text Classification: A Comparison](https://www.researchgate.net/publication/338883896_Deep_Learning_for_Hindi_Text_Classification_A_Comparison)
 
