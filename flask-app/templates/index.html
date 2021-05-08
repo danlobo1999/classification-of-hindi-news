@@ -63,7 +63,7 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <img src="{{ url_for('static', filename='img/COHN-Architecture.JPEG') }}" class="img-fluid" alt="">
+            <img src="{{ url_for('static', filename='/img/COHN-Architecture.jpeg') }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <h3>About</h3>
@@ -193,12 +193,12 @@
               <div class="col-md-12">
                 <div class="info-box">
                   <h3>Output</h3>
-                  <form action="" method="POST" role="form" class="php-email-form">
+                  <form action="" method="POST" role="form" class="php-email-form" id="clear">
                     <div class="form-group mt-3">
                       <textarea readonly id="category" style="font-weight: bold; text-align: center; background-color: white; resize: none; border: 0px;" class="form-control" name="text" rows="10" required>{{output_text}}</textarea>
                     </div>
                     <br>
-                    <div style="visibility: hidden;" class="text-center"><button id="classify-btn" type="submit">Classify</button></div>
+                    <div class="text-center"><button id="clear-btn" type="submit">Clear all</button></div>
                     <br>
                   </form>
                 </div>
@@ -387,6 +387,16 @@
           $("textarea#category").val(data);
         }
       })
+    });
+  </script>
+
+  <script>
+     $(document).on('submit','#clear',function(e)
+                  {
+      e.preventDefault();
+      document.getElementById("category").value = "";
+      document.getElementById("news-text").value = "";
+     
     });
   </script>
 

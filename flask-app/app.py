@@ -8,13 +8,10 @@ from hindibert.classify import Classify
 
 app = Flask("flask-app", template_folder="templates")
 
-hindi_bert = None
 
 # Home page
 @app.route("/")
 def index():
-    global hindi_bert
-    hindi_bert = Classify()
     return render_template("index.html")
 
 
@@ -22,8 +19,10 @@ def index():
 @app.route("/classify/", methods=["POST", "GET"])
 def classify():
     if request.method == "POST":
+        hindi_bert = Classify()
         input_text = [request.form.get("data")]
         output_text = "Category : " + hindi_bert.predictor(text=input_text)
+        del hindi_bert
 
         return output_text
 
@@ -31,4 +30,5 @@ def classify():
 
 
 if __name__ == "__main__":
+    # app.run(debug=True, use_reloader=True)
     app.run()

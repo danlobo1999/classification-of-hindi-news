@@ -33,7 +33,7 @@ due to its large set of available conjuncts and letter combinations, its sentenc
 We used BBC Hindi News Dataset to train the model and gained an accuracy of 63.47%.
 
 <p align="center">
-    <img src = "flask-app/static/img/COHN-Architecture.JPEG">
+    <img src = "flask-app/static/img/COHN-Architecture.jpeg">
 </p>
 
 ## <a name="FS">**2. Folder Structure</a>**
