@@ -123,7 +123,7 @@ flask run
 ## <a name="Demo">**6. Demonstration**</a>
 
 Click on the GIF to watch the demonstration video.
-[![Classification of Hindi News' Demonstration](static/img/COHN_GIF.gif)](https://www.youtube.com/watch?v=NiI6iSWUnWg)
+[![Classification of Hindi News' Demonstration](flask-app/static/img/COHN_GIF.gif)](https://www.youtube.com/watch?v=NiI6iSWUnWg)
 
 ---
 
