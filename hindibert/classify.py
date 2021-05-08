@@ -9,6 +9,8 @@ class Classify:
         self.paths = {
             "model": "model/hindi_bert_model/model_joblib",
             "labeler": "model/hindi_bert_model/labeler_joblib",
+            # "model": "../model/hindi_bert_model/model_joblib",
+            # "labeler": "../model/hindi_bert_model/labeler_joblib",
         }
         self.model = joblib.load(f'{self.paths["model"]}')
         self.labeler = joblib.load(f'{self.paths["labeler"]}')
