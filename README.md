@@ -118,7 +118,6 @@ flask run
 
 * The [hindibert](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/hindibert) folder consists of the python source code required to run  the application and the [model](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/model) folder contains our Hindi BERT model which is trained on our [dataset](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/dataset).
 
-
 * The [notebooks folder](https://github.com/danlobo1999/classification-of-hindi-news/tree/development/notebooks) consists of various notebooks for data exploration, training and testing the Hindi BERT model. 
 
 ## <a name="Demo">**6. Demonstration**</a>
